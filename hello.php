@@ -2,8 +2,6 @@
 include("dbconnection/connect.php");
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Check if all required fields are set and not empty
     $dob = isset($_POST['dob']) ? $_POST['dob'] : '';
     $home = isset($_POST['house']) ? $_POST['house'] : '';
     $gender = isset($_POST['gender']) ? $_POST['gender'] : '';
@@ -55,3 +53,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Close connection
 mysqli_close($conn);
+hehe sura
